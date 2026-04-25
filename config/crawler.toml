@@ -1,0 +1,33 @@
+# Jobboard Crawling Engine - Configuration
+# Python Implementation with Advanced Anti-Detection
+
+[anti_detection]
+fingerprint_randomization = true
+stealth_mode = true
+user_agent_randomization = true
+behavior_simulation = true
+
+[proxy_pool]
+enabled = true
+auto_discovery = false
+health_check_interval_seconds = 60
+
+[rate_limiting]
+base_requests_per_second = 5.0
+max_requests_per_second = 10.0
+min_requests_per_second = 1.0
+adaptive_scaling = true
+
+[captcha_solving]
+enabled = true
+provider = "2captcha"
+
+[behavior_simulation]
+simulate_typing = true
+simulate_scrolling = true
+simulate_mouse_movement = false
+
+[platforms]
+upwork = { base_url = "https://www.upwork.com/jobs", difficulty = "medium", proxy_required = true, headless = true, max_scrapes = 20 }
+freelancer = { base_url = "https://www.freelancer.com/projects", difficulty = "hard", proxy_required = true, headless = true, max_scrapes = 20 }
+linkedin_jobs = { base_url = "https://www.linkedin.com/jobs/search", difficulty = "hard", proxy_required = true, headless = true, max_scrapes = 15 }

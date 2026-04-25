@@ -1,0 +1,10 @@
+{
+  "proxies": [],
+  "auto_discovery": false,
+  "auto_discovery_enabled": true,
+  "proxy_sources": ["free-ssr", "iphub"],
+  "primary_region": "unknown",
+  "preferred_proxies": ["residential"],
+  "health_check_interval_seconds": 60,
+  "max_failures_before_removal": 10
+}

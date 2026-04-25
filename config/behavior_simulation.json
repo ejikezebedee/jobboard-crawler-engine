@@ -1,0 +1,14 @@
+{
+  "enable_random_delays": true,
+  "simulate_typing": true,
+  "simulate_scrolling": true,
+  "simulate_mouse_movement": false,
+  "simulate_reading_time": true,
+  "simulate_form_interaction": true,
+  "simulate_exit_intent": true,
+  "simulated_typing_speed": "human",
+  "simulated_scrolling_speed": "smooth",
+  "typing_variance": 0.5,
+  "scroll_variance": 0.3,
+  "mouse_movement_steps": 10
+}

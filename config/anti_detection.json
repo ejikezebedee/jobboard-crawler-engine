@@ -1,0 +1,48 @@
+{
+  "fingerprint_randomization": {
+    "enabled": true,
+    "randomize_header": true,
+    "randomize_canvas": true,
+    "randomize_webgl": true,
+    "rotate_headers_per_request": true,
+    "unique_fingerprint_per_session": true
+  },
+  "stealth_mode": {
+    "disable_automation_indicators": true,
+    "disable_blink_features": true,
+    "disable_infobars": true,
+    "disable_setuid_sandbox": true,
+    "disable_gpu": true,
+    "disable_web_security": false,
+    "disable_site_isolation": false,
+    "ignore_https_errors": false,
+    "ignore_certificate_errors": false,
+    "ignore_default_args": [
+      "--disable-blink-features=AutomationControlled",
+      "--disable-infobars",
+      "--disable-dev-shm-usage",
+      "--disable-setuid-sandbox",
+      "--no-sandbox",
+      "--disable-gpu"
+    ]
+  },
+  "user_agent_randomization": {
+    "enabled": true,
+    "use_fake_useragent": true,
+    "fallback_user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/125.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Firefox/124.0.0.0 Safari/537.36"
+    ]
+  },
+  "behavior_simulation": {
+    "enable_random_delays": true,
+    "enable_mouse_movements": false,
+    "enable_scroll_patterns": true,
+    "typing_variance": 0.5,
+    "scroll_variance": 0.3,
+    "mouse_move_steps": 10
+  }
+}

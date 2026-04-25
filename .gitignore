@@ -1,0 +1,44 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv/
+venv/
+ENV/
+.eggs/
+*.egg-info/
+dist/
+build/
+output/*.json
+output/*.csv
+*.log
+*.png
+*.jpg
+*.jpeg
+__pycache__/
+*.pyc
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Proxy files
+*.json.bak
+*.json.tmp
+
+# Notebook files
+.ipynb_checkpoints
+*.ipynb
+
+# IDE files
+.idea/
+.vscode/
+*.vscode
+.workspace
+
+# OS files
+Thumbs.db
+.DS_Store
+*~

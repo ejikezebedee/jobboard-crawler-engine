@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "provider": "2captcha",
+  "api_key": "YOUR_2CAPTCHA_API_KEY",
+  "min_confidence": 0.5,
+  "timeout_seconds": 60,
+  "retry_attempts": 3,
+  "auto_solve": true,
+  "auto_detect": true,
+  "max_retries_per_captcha": 5
+}

@@ -1,0 +1,83 @@
+{
+  "platforms": {
+    "upwork": {
+      "base_url": "https://www.upwork.com/jobs",
+      "difficulty": "medium",
+      "proxy_required": true,
+      "headless": true,
+      "timeout_seconds": 30,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      " selectors": {
+        "job_selector": ".job-list-item",
+        "title_selector": ".job-title",
+        "company_selector": ".company-name",
+        "location_selector": ".location",
+        "salary_selector": ".salary",
+        "description_selector": ".job-description"
+      },
+      "continuous_mode": false,
+      "max_scrapes": 20,
+      "wait_for_elements": [".job-list-item", ".job-title", ".company-name"]
+    },
+    "freelancer": {
+      "base_url": "https://www.freelancer.com/projects",
+      "difficulty": "hard",
+      "proxy_required": true,
+      "headless": true,
+      "timeout_seconds": 30,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "selectors": {
+        "job_selector": ".project-card",
+        "title_selector": ".project-title",
+        "company_selector": ".employer-name",
+        "location_selector": ".location",
+        "salary_selector": ".project-price",
+        "description_selector": ".project-description"
+      },
+      "continuous_mode": false,
+      "max_scrapes": 20,
+      "wait_for_elements": [".project-card", ".project-title", ".employer-name"]
+    },
+    "linkedin-jobs": {
+      "base_url": "https://www.linkedin.com/jobs/search/?keywords=&location=&f_WT=%7B%22cnt%22%3A%221%22%7D&f_E%5B%22te%5D%3D2",
+      "difficulty": "hard",
+      "proxy_required": true,
+      "headless": true,
+      "timeout_seconds": 30,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "selectors": {
+        "job_selector": ".job-card-container",
+        "title_selector": ".job-card-list__title",
+        "company_selector": ".subcard-title",
+        "location_selector": ".metadata.posted-time",
+        "salary_selector": ".metadata.salary-range",
+        "description_selector": ".job-card__description"
+      },
+      "continuous_mode": false,
+      "max_scrapes": 15,
+      "wait_for_elements": [".job-card-container", ".job-card-list__title"]
+    }
+  },
+  "anti_detection": true,
+  "proxy_pool": true,
+  "rate_limiting": true,
+  "captcha_solving": true,
+  "behavior_simulation": true,
+  "health_monitoring": true,
+  "output": {
+    "format": "json",
+    "directory": "output",
+    "include_fingerprint": true,
+    "include_proxy": true,
+    "include_captcha_count": true
+  }
+}
